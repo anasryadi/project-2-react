@@ -19,7 +19,7 @@ function NewsPage() {
     return (
       <li>
         {newsItem.title}
-        <p>{newsItem.description}</p>
+        <p>{newsItem.content}</p>
         <img src={newsItem.urlToImage} alt="News IMG"  width="900" height="600"></img>
 
       </li>
