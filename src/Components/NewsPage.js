@@ -16,6 +16,8 @@ function NewsPage() {
   }, []);
 
   const newsMap = news.map((newsItem) => {
+    console.log(newsItem);
+
     return (
       <li>
         {newsItem.title}
@@ -23,6 +25,7 @@ function NewsPage() {
         <img src={newsItem.urlToImage} alt="News IMG"  width="900" height="600"></img>
 
       </li>
+      
     );
   });
 

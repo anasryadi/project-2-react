@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <nav>
         <Link to="/">
-          <h1>home</h1>
+          <h1>Home</h1>
         </Link>
         <Link to="/news">
-          <h1>news</h1>
+          <h1>News</h1>
         </Link>
       </nav>
       <Routes>
