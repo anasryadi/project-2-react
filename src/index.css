@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@300;500&display=swap");
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
   background-color: antiquewhite;
+  height: 100vh;
 }
 
 h1 {
@@ -24,6 +30,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 10px;
+  background-color: lightblue;
 }
 footer {
   display: flex;
@@ -31,13 +38,15 @@ footer {
   gap: 10px;
 }
 
-
 @media only screen and (max-width: 600px) {
   body {
     text-align: center;
     background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
   }
   img{
-    border-image:stretch;
+    height: 300px;
+    width: 500px;
   }
 }
