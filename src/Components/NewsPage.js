@@ -8,7 +8,7 @@ function NewsPage() {
 
   useEffect(() => {
     fetch(
-      `https://newsapi.org/v2/everything?q=Apple&from=2022-05-13&apiKey=${apiKey}`
+      `https://newsapi.org/v2/everything?q=random&apiKey=${apiKey}`
     )
       .then((response) => response.json())
       .then((data) => setNews(data.articles))
@@ -21,12 +21,15 @@ function NewsPage() {
     return (
       <li>
         <a href={newsItem.url}>{newsItem.title}</a>
-        
-        <p>{newsItem.content}</p>
-        <img src={newsItem.urlToImage} alt="News IMG"  width="900" height="600"></img>
 
+        <p>{newsItem.content}</p>
+        <img
+          src={newsItem.urlToImage}
+          alt="News IMG"
+          width="900"
+          height="600"
+        ></img>
       </li>
-      
     );
   });
 
