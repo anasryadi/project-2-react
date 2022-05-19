@@ -18,7 +18,7 @@ function Home() {
   const newsMap = news.map((newsItem) => {
     return (
       <li>
-        {newsItem.title}
+        <a href={newsItem.url}>{newsItem.title}</a>
       </li>
     );
   });
