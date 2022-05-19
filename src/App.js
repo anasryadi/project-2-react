@@ -19,6 +19,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<NewsPage />} />
       </Routes>
+      <footer>
+      <Link to="/">
+          <h1>Home</h1>
+        </Link>
+        <Link to="/news">
+          <h1>News</h1>
+        </Link>
+      </footer>
     </div>
   );
 }
