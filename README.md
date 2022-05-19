@@ -328,23 +328,13 @@ Use this section to include a brief code snippet of functionality that you are p
 
 The below code is how the leaderboard is populated. The shorter the name, the more dots are added between the name and score. The font size is set progressively smaller for each entry.
 
-let fontSize = props.gameView ? 24 : 42
+const apiKey = "ea42bb03df5c4e5f88941b56087889c2";
 
-scoreList = props.highScores.map((highScore, i) => {
-	let dots = ' . . . '   
-	for (let j = highScore.name.length; j < 12; j += 2) {
-		dots += '. '
-	}
-	if (i > 0) {
-		let mult = (i < 3 ? 2 : 1)
-		props.gameView ? fontSize -= 1 * mult : fontSize -= 3 * mult
-	}
-...
-
-	return (
-		<li style={{fontSize: `${fontSize}px`, color: color}} key={i}>
-			<span className="bold">{`${i + 1}) `}</span>
-			{highScore.name} {dots} {highScore.score}
-		</li>
-	) 
-})
+  useEffect(() => {
+    fetch(
+      `https://newsapi.org/v2/everything?q=Apple&from=2022-05-13&apiKey=${apiKey}`
+    )
+      .then((response) => response.json())
+      .then((data) => setNews(data.articles))
+      .catch((error) => console.log("error"));
+  }, []);
