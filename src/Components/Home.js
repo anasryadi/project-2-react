@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -30,10 +30,9 @@ function Home() {
     </div>
   );
 
-  
   // return (
   //   <div>Headlines</div>
   // )
 }
 
-export default Home
+export default Home;
