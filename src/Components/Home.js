@@ -29,10 +29,6 @@ function Home() {
       <ul>{newsMap}</ul>
     </div>
   );
-
-  // return (
-  //   <div>Headlines</div>
-  // )
 }
 
 export default Home;
