@@ -1,14 +1,14 @@
 import React from 'react'
 import { useEffect, useState } from "react";
 
-const AppleNews = () => {
+const DogeNews = () => {
     const [news, setNews] = useState([]);
 
     const apiKey = "ea42bb03df5c4e5f88941b56087889c2";
   
     useEffect(() => {
       fetch(
-        `https://newsapi.org/v2/everything?q=apple&apiKey=${apiKey}`
+        `https://newsapi.org/v2/everything?q=doge&apiKey=${apiKey}`
       )
         .then((response) => response.json())
         .then((data) => setNews(data.articles))
@@ -41,4 +41,4 @@ const AppleNews = () => {
     );
 }
 
-export default AppleNews
+export default DogeNews

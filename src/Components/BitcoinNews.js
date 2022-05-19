@@ -22,7 +22,7 @@ const BitcoinNews = () => {
         <li>
           <a href={newsItem.url}>{newsItem.title}</a>
           
-          <p>{newsItem.content}</p>
+          <p>{newsItem.description}</p>
           <img src={newsItem.urlToImage} alt="News IMG"  width="900" height="600"></img>
   
         </li>
@@ -32,7 +32,7 @@ const BitcoinNews = () => {
   
     return (
       <div>
-        <h1>News</h1>
+        <h1>Bitcoin News</h1>
         <ul>{newsMap}</ul>
       </div>
     );

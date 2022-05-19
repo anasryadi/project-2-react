@@ -8,7 +8,7 @@ function NewsPage() {
 
   useEffect(() => {
     fetch(
-      `https://newsapi.org/v2/everything?q=random&apiKey=${apiKey}`
+      `https://newsapi.org/v2/everything?q=a&apiKey=${apiKey}`
     )
       .then((response) => response.json())
       .then((data) => setNews(data.articles))
@@ -22,7 +22,7 @@ function NewsPage() {
       <li>
         <a href={newsItem.url}>{newsItem.title}</a>
 
-        <p>{newsItem.content}</p>
+        <p>{newsItem.description}</p>
         <img
           src={newsItem.urlToImage}
           alt="News IMG"
