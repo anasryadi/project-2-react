@@ -7,9 +7,7 @@ function NewsPage() {
   const apiKey = "ea42bb03df5c4e5f88941b56087889c2";
 
   useEffect(() => {
-    fetch(
-      `https://newsapi.org/v2/everything?q=a&apiKey=${apiKey}`
-    )
+    fetch(`https://newsapi.org/v2/everything?q=a&apiKey=${apiKey}`)
       .then((response) => response.json())
       .then((data) => setNews(data.articles))
       .catch((error) => console.log("error"));

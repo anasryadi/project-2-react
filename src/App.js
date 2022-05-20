@@ -23,7 +23,7 @@ function App() {
           <h2>Bitcoin News</h2>
         </Link>
         <Link to="/doge">
-        <h2>Dogecoin News</h2>
+          <h2>Dogecoin News</h2>
         </Link>
       </nav>
       <Routes>
@@ -47,7 +47,7 @@ function App() {
           <h2>Bitcoin News</h2>
         </Link>
         <Link to="/doge">
-        <h2>Dogecoin News</h2>
+          <h2>Dogecoin News</h2>
         </Link>
       </footer>
     </div>
