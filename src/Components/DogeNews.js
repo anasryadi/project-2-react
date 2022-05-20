@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const DogeNews = () => {
   const [news, setNews] = useState([]);
 
-  const apiKey = "ea42bb03df5c4e5f88941b56087889c2";
+  const apiKey = "a83ff4f6232b4474bda4a51231b3839e";
 
   useEffect(() => {
     fetch(`https://newsapi.org/v2/everything?q=doge&apiKey=${apiKey}`)
