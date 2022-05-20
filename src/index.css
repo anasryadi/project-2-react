@@ -4,17 +4,20 @@
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 .App {
   text-align: center;
   background-color: antiquewhite;
   height: auto;
-  /* height: 1420vh; */
+  /* height: 100vh; */
+  
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
+  color:lightsalmon;
 }
 
 p {
@@ -31,9 +34,11 @@ li {
 nav {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   background-color: lightblue;
-
+}
+a{
+  color: rgb(12, 152, 199);
 }
 h2{
   font-family: 'Koulen', cursive;
@@ -42,7 +47,7 @@ h2{
 footer {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   background-color: lightblue;
 }
 
@@ -57,6 +62,9 @@ footer {
     height: 300px;
     width: 500px;
   }
+}
+.homeDiv{
+  height: 80vh;
 }
 
 

@@ -24,7 +24,7 @@ function Home() {
   });
 
   return (
-    <div>
+    <div className="homeDiv">
       <h1>Headlines</h1>
       <ul>{newsMap}</ul>
     </div>
