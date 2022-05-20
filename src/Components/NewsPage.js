@@ -18,7 +18,7 @@ function NewsPage() {
 
     return (
       <li>
-        <a href={newsItem.url}>{newsItem.title}</a>
+        <a href={newsItem.url} target="_blank" rel="noopener noreferrer">{newsItem.title}</a>
 
         <p>{newsItem.description}</p>
         <img
