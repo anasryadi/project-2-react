@@ -5,6 +5,7 @@ import BitcoinNews from "./Components/BitcoinNews";
 import { Link, Routes, Route } from "react-router-dom";
 import AppleNews from "./Components/AppleNews";
 import DogeNews from "./Components/DogeNews";
+import Search from "./Components/Search";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/bitcoin" element={<BitcoinNews />} />
         <Route path="/apple" element={<AppleNews />} />
         <Route path="/doge" element={<DogeNews />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
       <footer>
         <Link to="/">

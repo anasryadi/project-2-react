@@ -33,7 +33,7 @@ const DogeNews = () => {
 
   return (
     <div>
-      <h1>Apple News</h1>
+      <h1>Dogecoin News</h1>
       <ul>{newsMap}</ul>
     </div>
   );
